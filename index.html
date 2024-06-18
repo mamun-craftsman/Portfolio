@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css">
+    <script src="Js/header.js" defer></script>
+    <title>Portfolio</title>
+  </head>
+  <body
+    class="box-border w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] pl-1 pr-1 xs:pl-4 xs:pr-4 sm:pl-12 md:pl-24"
+    >
+    <main class="border-l-4 border-gray-950">
+      <!-- navbar with dropdown icon fro mobile format needs improvement -->
+      <nav class="text-black sticky top-0 z-50 bg-white w-full" style="top: 0;">
+        <div
+          class="w-full flex flex-wrap items-center justify-between mx-auto p-2"
+          >
+          <!-- logo -->
+          <a href="#" class="flex items-center py-2 px-2 flex-1">
+            <span class="font-bold text-4xl text-black"
+              ><i class="ri-terminal-box-fill"></i
+              ></span>
+            <p class="pl-1 text-2xl lg:text-3xl text-black">Mamun</p>
+          </a>
+          <!-- mobile screen menu button -->
+          <button
+            id="navbar-toggle"
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-1 w-10 h-10  justify-center text-sm text-gray-500 rounded-lg md:hidden"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+            >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+              >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+                />
+            </svg>
+          </button>
+          <!-- Main Menu any control on main menu by Id navbar-dropdown -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg items-center md:flex-row md:space-x-8 md:mt-0 md:border-0"
+              >
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Home</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 md:p-0">Portfolio</a>
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0"
+                  >
+                  Blog
+                  <svg
+                    class="w-2.5 h-2.5 ml-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                    >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                      />
+                  </svg>
+                </button>
+                <!-- dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="absolute z-50 hidden font-normal bg-white text-black border-2 border-gray-950 rounded-lg p-6"
+                  >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                    >
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                        >Python</a
+                        >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                        >C#</a
+                        >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                        >JavaScript</a
+                        >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-4 border-2 border-gray-950 rounded-lg">Hire Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header content -->
+      <header class="flex flex-col mt-4 gap-4 pl-3">
+        <div class="ly-l pr-1 relative flex flex-col items-center">
+          <div class="relative ph">
+            <img
+              class="w-44 h-44 object-cover rounded-full"
+              src="img/mamun.png"
+              alt=""
+              />
+            <div class="txt bg-gray-950 text-xs text-white w-max absolute">
+              <code>&lt;Hello, World&gt;</code>
+            </div>
+            <img
+              class="arr w-10 h-10 object-contain absolute"
+              src="img/arrow.png"
+              alt=""
+              />
+          </div>
+          <div
+            class="font-bold text-l md:text-2xl mt-4 mt-2 md:mt-6 xs:text-xl md:text-left xs:self-start"
+            >
+            <h2>Aspiring Backend Developer Ready to Contribute. Committed to delivering exceptional web solutions.</h2>
+          </div>
+        </div>
+        <div class="ly-r text-md font-semibold">
+          <h2>I Respect Your Time</h2>
+          <h2>Download My Resume to Learn More About Me</h2>
+          <button
+            class="mt-2 w-max bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-1 border border-gray-400 rounded shadow"
+            >
+          Download Resume
+          </button>
+        </div>
+      </header>
+      <!-- What I do section -->
+      <section class="box-container flex flex-col pl-1">
+        <div class="card flex gap-8 flex-wrap items-center justify-around relative">
+          <div class="card-item border-2 border-gray-900 w-60 py-6 px-4 rotate-6">
+            <h2 class="text-xl font-semibold pb-4">Backend Development</h2>
+            <p>I am a dedicated backend developer specializing in creating feature-rich and scalable backend solutions tailored to your needs. Let’s bring your vision to life with robust and efficient code!</p>
+          </div>
+          <div class="card-item border-2 border-gray-900 w-60 py-6 px-4 -rotate-6">
+            <h2 class="text-xl font-semibold pb-4">Theme Customization</h2>
+            <p>I specialize in theme customization for <span class="font-bold">WordPress, Shopify, and more</span>. Let me tailor your website’s look and functionality to perfectly match your vision and requirements.</p>
+          </div>
+          <div class="card-item border-2 border-gray-900 w-60 py-6 px-4 rotate-6">
+            <h2 class="text-xl font-semibold pb-4">Custom Html Template Design</h2>
+            <p>I create custom HTML templates designed to meet your specific needs and vision. Let's craft a unique and responsive design that stands out.</p>
+          </div>
+          <h2 class="section-heading font-bold text-xl p-2 mt-12 bg-gray-950 w-max text-white -rotate-6 absolute">What I do</h2>
+          <span class="absolute arrL"><img class="w-20 h-20" src="img/arrowLove.png" alt="" srcset=""></span>
+        </div>
+      </section>
+      <!-- Skill Section -->
+      <section class="box-container flex flex-col pl-1">
+        <div class="card flex gap-8 flex-wrap items-center justify-around relative ">
+          <div class="card-item border-2 border-gray-900 w-16 rotate-6">
+            <img src="img/php.png" alt="" srcset="">
+          </div>
+          <div class="card-item border-2 border-gray-900 w-16 -rotate-6">
+            <img src="img/laravel.png" alt="" srcset="">
+          </div>
+          <div class="card-item border-2 border-gray-900 w-16 rotate-6">
+            <img src="img/mysql.png" alt="" srcset="">
+          </div>
+          <div class="card-item border-2 border-gray-900 w-16 rotate-6">
+            <img src="img/js.png" alt="" srcset="">
+          </div>
+          <div class="card-item border-2 border-gray-900 w-16 rotate-6">
+            <img src="img/css.png" alt="" srcset="">
+          </div>
+          <h2 class="section-heading font-bold text-xl p-2 mt-12 bg-gray-950 w-max text-white -rotate-6 absolute">Skilled In</h2>
+          <span class="absolute arrL"><img class="w-20 h-20" src="img/arrowLove.png" alt="" srcset=""></span>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section class="box-container flex flex-col pl-1">
+        <div class="card flex items-center relative">
+        <div class="card__container swiper relative">
+          <a href="#" class="card__button absolute" style="margin-top: 0; right:48px">View All</a>
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="img/avatar-1.png" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+                </div>
+                <div class="card__data">
+                  <div class="tag">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Php</span>
+                  </div>
+                  <h3 class="card__name">Project Name</h3>
+                  <h6>What I've learned: </h6>
+                  <ul class="learn">
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                  </ul>
+                  <div class="btn flex gap-2">
+                    <a href="#" class="card__button">Live Preview</a>
+                    <a href="#" class="card__button">Code</a>
+                  </div>
+                </div>
+              </article>
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="img/avatar-2.png" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+                </div>
+                <div class="card__data">
+                  <div class="tag">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Php</span>
+                  </div>
+                  <h3 class="card__name">Project Name</h3>
+                  <h6>What I've learned: </h6>
+                  <ul class="learn">
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                  </ul>
+                  <div class="flex gap-2">
+                    <a href="#" class="card__button">Live Preview</a>
+                    <a href="#" class="card__button">Code</a>
+                  </div>
+                </div>
+              </article>
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="img/avatar-3.png" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+                </div>
+                <div class="card__data">
+                  <div class="tag">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Php</span>
+                  </div>
+                  <h3 class="card__name">Project Name</h3>
+                  <h6>What I've learned: </h6>
+                  <ul class="learn">
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                  </ul>
+                  <div class="flex gap-2">
+                    <a href="#" class="card__button">Live Preview</a>
+                    <a href="#" class="card__button">Code</a>
+                  </div>
+                </div>
+              </article>
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="img/avatar-4.png" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+                </div>
+                <div class="card__data">
+                  <div class="tag">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Php</span>
+                  </div>
+                  <h3 class="card__name">Project Name</h3>
+                  <h6>What I've learned: </h6>
+                  <ul class="learn">
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                  </ul>
+                  <div class="flex gap-2">
+                    <a href="#" class="card__button">Live Preview</a>
+                    <a href="#" class="card__button">Code</a>
+                  </div>
+                </div>
+              </article>
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img src="img/avatar-5.png" alt="image" class="card__img">
+                  <div class="card__shadow"></div>
+                </div>
+                <div class="card__data">
+                  <div class="tag">
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Php</span>
+                  </div>
+                  <h3 class="card__name">Project Name</h3>
+                  <h6>What I've learned: </h6>
+                  <ul class="learn">
+                    <li>Learning 1</li>
+                    <li>Learning 2</li>
+                    <li>Learning 3</li>
+                  </ul>
+                  <div class="flex gap-2">
+                    <a href="#" class="card__button">Live Preview</a>
+                    <a href="#" class="card__button">Code</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Navigation buttons swiper -->
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-wide-line"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-wide-fill"></i>
+          </div>
+        </div>
+        <h2 class="section-heading font-bold text-xl p-2 mt-12 bg-gray-950 w-max text-white -rotate-6 absolute">My Work</h2>
+        <span class="absolute arrL"><img class="w-20 h-20" src="img/arrowLove.png" alt="" srcset=""></span>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- Academic Section -->
+      <section class="box-container flex flex-col pl-1">
+        <div class="card flex gap-4 flex-wrap items-center justify-around relative w-full">
+          <div class="flex gap-2 card-item border-2 border-gray-900 w-full">
+            <img class="object-contain " src="img/icons8-engineering-64.png" alt="" srcset="">
+            <div class="desc">
+              <h3 class="font-bold">Computer Science and Engineering student </h3>
+              <h3>at Jashore University of Science & Technology</h3>
+            </div>
+          </div>
+          <div class="flex gap-2 card-item border-2 border-gray-900 w-full">
+            <img class="object-contain " src="img/icons8-programming-64.png" alt="" srcset="">
+            <div class="desc">
+              <h3 class="font-bold">Perticipant in</h3>
+              <h3>Intenational (National as well) Collegiet Programming Contest</h3>
+            </div>
+          </div>
+          <div class="flex gap-2 card-item border-2 border-gray-900 w-full">
+            <img class="object-contain " src="img/icons8-codeforces.-programming-competitions-and-contests,-programming-community.-64.png" alt="" srcset="">
+            <div class="desc">
+              <h3 class="font-bold">Problem Solver</h3>
+              <h3>Specialist at Codeforces</h3>
+            </div>
+          </div>
+          <h2 class="section-heading font-bold text-xl p-2 mt-12 bg-gray-950 w-max text-white -rotate-6 absolute">Academic</h2>
+          <span class="absolute arrL"><img class="w-20 h-20" src="img/arrowLove.png" alt="" srcset=""></span>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="box-container flex flex-col pl-1">
+        <div class="card flex gap-4 flex-wrap relative">
+          <div class="contact-me">
+            <form action="process_form.php" method="POST" class="p-1">
+              <div class="form-group flex gap-2">
+                <label for="name" class="font-medium text-gray-700 w-16">Name:</label>
+                <input type="text" id="name" name="name" required class="px-4 py-2 border-b-2 border-gray-950 focus:outline-none w-full placeholder:italic placeholder:sm" placeholder="Your name please">
+              </div>
+              <div class="form-group flex gap-2">
+                <label for="subject" class="font-medium text-gray-700 w-16">Subject:</label>
+                <input type="text" id="subject" name="subject" required class="px-4 py-2 border-b-2 border-gray-950 focus:outline-none w-full placeholder:italic placeholder:sm" placeholder="What about the subject">
+              </div>
+              <div class="form-group flex gap-2">
+                <label for="message" class="font-medium text-gray-700 w-16">Message:</label>
+                <textarea id="message" name="message" rows="4" required class="px-4 py-2 border-b-2 border-gray-950 focus:outline-none w-full placeholder:italic placeholder:sm" placeholder="Please share your contact details along with the message so that I can get in touch with you."></textarea>
+              </div>
+              <div class="text-center flex">
+                <button type="submit" class="text-semibold text-sm bg-gray-950 text-white px-4 py-2 mt-4">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <h2 class="section-heading font-bold text-xl p-2 mt-12 bg-gray-950 w-max text-white -rotate-6 absolute">Contact Me</h2>
+          <span class="absolute arrL"><img class="w-20 h-20" src="img/arrowLove.png" alt="" srcset=""></span>
+        </div>
+      </section>
+    </main>
+    <footer class="relative border-l-4 border-gray-950">
+      <div class="div-border absolute">
+      </div>
+      <div class="footer-content flex items-center justify-between pt-6 pb-6 pl-3 ">
+        <div class="footer-left">
+          <span class="font-bold text-4xl text-black"
+            ><i class="ri-terminal-box-fill"></i
+            ></span>
+        </div>
+        <div class="my-sign">
+          <img class="object-contain w-20 h-20" src="img/signmmm.png" alt="">
+        </div>
+        <div class="footer-right flex gap-2 items-center text-3xl">
+          <a href=""><i class="ri-github-fill"></i></a>
+          <a href=""><i class="ri-linkedin-box-fill"></i></a>
+          <a href=""><i class="ri-facebook-box-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!--=============== SWIPER JS ===============-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

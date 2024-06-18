@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ /*=============== Slider class along with my custom class ===============*/
+  .card__content {
+	margin-inline: 1.75rem;
+	overflow: hidden;
+  }
+  
+  .card__article {
+	overflow: hidden;
+	margin-top: 40px;
+	border: 3px solid black;
+	border-top-left-radius:8px;
+	border-top-right-radius: 8px;
+  }
+  
+  .card__image {
+	position: relative;
+	padding-top: 1.5rem;
+	margin-bottom: -.75rem;
+  }
+  
+  .card__data {
+	padding: 1.5rem 2rem;
+	position: relative;
+	z-index: 10;
+  }
+  .tag{
+	position: absolute;
+	top:3px;
+	right: 3px;
+	font-weight: bold;
+  }
+  .tag>span {
+	background-color: black;
+	color: white;
+	padding: 2px 5px;
+	border-radius: 20%;
+  }
+  
+  .card__img {
+	width: 180px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 5;
+  }
+  
+  .card__shadow {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3.75rem;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	filter: blur(45px);
+  }
+  
+  .card__name {
+	margin-bottom: .75rem;
+	font-weight: bold;
+	font-size: 24px;
+  }
+  
+  .card__description {
+	font-weight: 500;
+	margin-bottom: 1.75rem;
+  }
+  
+  .card__button {
+	margin-top: 0.5em;
+	display: inline-block;
+	padding: .2rem 0.5rem;
+	border-radius: .25rem;
+	font-weight: 600;
+	border: 2px solid black;
+  }
+  
+  /* Swiper class */
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+	content: "";
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+	width: initial;
+	height: initial;
+	font-size: 3rem;
+	color: var(--second-color);
+	display: none;
+  }
+
+  
+  .swiper-button-next {
+	right: 14px;
+  }
+  
+  .swiper-pagination-bullet {
+	background-color: hsl(212, 32%, 40%);
+	opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+	background-color: black
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  @media screen and (max-width: 320px) {
+	
+	.card__data {
+	  padding: 1rem;
+	}
+  }
+  
+  @media screen and (min-width:320px) {
+	.swiper-button-next{
+		right: 0;
+	  }
+	  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+		left: 0px;
+		right: auto;
+	}
+	.card__button{
+		font-size: 0.9em;
+	}
+	
+  }
+
+  @media screen and (min-width: 768px) {
+	.card__content {
+	  margin-inline: 3rem;
+	}
+  
+	.swiper-button-next,
+	.swiper-button-prev {
+	  display: block;
+	}
+  }
+
+  
+  @media screen and (min-width: 1120px) {
+	.card__container {
+	  max-width: 1120px;
+	}
+  
+
+  }
+
+
+ /*=============== Other style ===============*/
+main{
+	width: 100%;
+	height: full;
+}
+
+#navbar-dropdown>ul>li:hover{
+	opacity: 0.8;
+}
+#navbar-toggle:hover {
+	border: 2px solid black;
+}
+
+.ph>.txt{
+	top: 0px;
+    left: 121px;
+    transform: rotateZ(6deg);
+}
+.ph>.arr{
+	top: 12px;
+    left: 128px;
+    transform: rotateZ(-15deg);
+}
+
+.arrL {
+	top: -6em;
+    left: 7.4em;
+}
+
+.section-heading{
+	top: -7em;
+    left: 0.4em;
+}
+
+.box-container{
+	height: auto;
+	margin-top: 14rem;
+	
+}
+.desc{
+	padding: 3px;
+	
+}
+.contact-me{
+	padding: 1px 3px;
+	width: 100%;
+
+}
+
+
+.form-group{
+	margin-bottom: 0.8em;
+}
+footer{
+	width: 100%;
+}
+
+
+.div-border{
+	height: 4px;
+	background-color: black;
+	border-radius: 5px;
+	left:-95px;
+	width:calc(100% + 95px);
+}
+
+@media screen and (max-width: 768px) {
+	
+	#navbar-dropdown>ul{
+		align-items: start;
+	}
+}
